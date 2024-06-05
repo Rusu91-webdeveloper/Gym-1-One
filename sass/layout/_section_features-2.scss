@@ -1,0 +1,79 @@
+.section-features {
+  overflow: hidden;
+    margin-top: -30rem;
+    display: flex;
+    background-image: url(../img/pexels-leon-ardho-1552249.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: skewY(-8deg);
+    @include respond(tab-port){
+      margin-top: -60rem;
+      width: 100%;
+   flex-direction: row;
+    }
+    @include respond(big-desktop) {
+    }
+
+    &__parent {
+      overflow: hidden;
+        transform: skewY(8deg);
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+    
+        @include respond(tab-port){ 
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+        }
+       
+        
+
+    }
+    .features-box {
+        height: 100%;
+        background: linear-gradient(to right bottom, rgba($color-grey-dark, .7), rgba($color-grey-light-1, .8));
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22rem;
+        padding: 1rem 1rem;
+        transition: all .4s ease;
+        border-radius: 1rem;
+        margin: 0 auto;
+        @include respond(tab-port){
+        display: grid;
+        grid-template-columns: 1fr 2fr 5fr;
+        gap: 1rem;
+        width: 80%;
+        height: 90%;
+        overflow: hidden;
+  }
+   
+             &:hover {
+                cursor: pointer;
+                transform: translateY(-1.5rem) scale(1.06);
+             }
+              i {
+                font-size: 6rem;
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.712));
+                background-clip: text;
+                color: transparent;
+
+                @include respond(tab-port){
+              padding-right: 1rem;
+                  
+                }
+              }
+        
+    }
+}

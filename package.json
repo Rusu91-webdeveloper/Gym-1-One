@@ -1,0 +1,19 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile-scss & live-server",
+    "compile-scss": "sass --watch ./sass/main.scss ./css/style.css"
+  },
+  "author": "Rusu Emanuel",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.70.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

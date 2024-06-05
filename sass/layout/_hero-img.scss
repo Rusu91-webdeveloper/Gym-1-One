@@ -1,0 +1,32 @@
+.header {  
+    z-index: 10;
+    position: relative;
+    height:95vh;
+    background-image: linear-gradient(to right, rgba(26, 19, 19, 0.5), rgba(0, 0, 0, 0.6)), url(../img/pexels-william-choquette-1954524\ \(M\).jpg);
+    background-size: cover;
+    background-position: top;
+    /* with clip properties we clip the image to the shape we want ,it start from left corner on x and y axis and it goes clockwise  (x y, x y, x y, x y)  */
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+
+    //Pixel resolution media queries
+
+@media (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: linear-gradient(to right, rgba(26, 19, 19, 0.5), rgba(0, 0, 0, 0.6)), url(../img/pexels-william-choquette-1954524.jpg);
+
+}
+@media (max-resolution: 191dpi) and (min-width: 125em) {
+    background-image: linear-gradient(to right, rgba(26, 19, 19, 0.5), rgba(0, 0, 0, 0.6)), url(../img/pexels-william-choquette-1954524.jpg);
+}
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    
+}
+}
+

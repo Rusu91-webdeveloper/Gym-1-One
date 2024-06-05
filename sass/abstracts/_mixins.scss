@@ -1,0 +1,46 @@
+
+//Media querry mixin
+
+// 0-600px Phone
+
+// 600px - 900px Tablet portrait mode 
+
+// 900px - 1200px Tablet landscape mode 
+
+// 1200px - 1800px Desktop -Is where my style is applied
+
+// 1800px - 2400px Large desktop
+
+
+//@content allow us to pass in a block of code
+// @mixin respond-phone {
+//     @media (max-width: 600px) { @content };
+// }
+
+// $breakpoint argument choices
+// - phone 
+// - tab-port
+// - tab-land
+// - big-desktop
+
+
+// so i used EM and not REM because apparently rem is not supported in all browsers in media queries
+// 1em=16px 
+// 600 / 16 = 37.5em
+// 900 / 16 = 56.25em
+// 1200 / 16 = 75em
+// 1800 / 16 = 112.5em
+@mixin respond($breakpoint) {
+   @if $breakpoint == phone {
+      @media (max-width: 37em) {@content};  //600px   
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content};  //900px
+      }
+      @if $breakpoint == tab-land {
+        @media (max-width: 75em) {@content};     //1200px
+      }
+      @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content};    //1800px
+      }
+}

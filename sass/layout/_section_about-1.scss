@@ -1,0 +1,196 @@
+.section-about {
+  display: flex;
+  justify-content: space-between;
+      position: relative;
+      min-height: 130vh;
+      margin-top: -35rem;
+      background-color: $color-grey-light-1;
+      padding-top: 30rem;
+      transition: all .8s ease;
+      padding-bottom: 20rem;
+
+      @include respond(tab-land) {
+       min-height: 130vh;
+       padding-bottom: 30rem;
+    
+    }
+
+      @include respond(tab-port){
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+       flex-wrap: wrap;
+       min-height: 110vh;
+    }
+      @include respond(phone){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    @include respond(big-desktop) {
+      min-height: 150vh;
+      margin-top: -30rem;
+      padding-bottom: 50rem;
+      
+    }
+
+
+    
+ .heading-secondary{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  @include respond(tab-land) {
+    top: 19%;
+}
+  @include respond(tab-port){
+    top: 15%;
+}
+  @include respond(phone){
+ top: 14%;
+}
+
+ }
+    .col1 {
+        padding:17rem 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+     width: 40%;
+        font-size: 2rem;
+        height: 100%;
+
+
+        @include respond(tab-port){
+          width: 70%;
+ 
+      }
+        @include respond(phone){
+          width: 100%;
+      
+      }
+
+    }
+
+    .col2 {
+      position: relative;
+        z-index: 10;
+        transition: all .8s ease;
+        min-width: 60%;
+        height: 88rem;
+        // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        @include respond(tab-land) {
+          
+          margin-top: -2rem;
+      }
+
+      @include respond(tab-port){
+    
+       margin-top: -10rem;
+    }
+      @include respond(phone){
+        margin-top: -10rem;
+        width: 100%;
+    }
+   
+
+         .photo-p1 {
+            z-index: 10;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            position: absolute;
+            right: 22%;
+            top: 23%;
+            width:40rem;
+            
+                           @include respond(tab-port){
+                            top: -5%;
+                            right: 8%;
+                         }
+                           @include respond(phone){
+                            width: 50%;
+                           top: -2%;
+                           right: 25%
+                         }
+                      
+                         @include respond(big-desktop) {
+                          width: 60rem;
+                          
+                        }
+
+              &:hover {
+               transform: scale(1.2) translateY(-.5rem) ;
+               box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+               z-index: 20;
+}
+        }
+
+        .photo-p2 {
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            position: absolute;
+            right: 6%;
+            top: 30%;
+            
+            width: 40rem;
+            @include respond(tab-port){
+           right: -10rem;
+           top: 20%;
+          }
+            @include respond(phone){
+            width: 50%;
+              top: 15%;
+              margin-top: 0;
+              right: 2%;
+          }
+          @include respond(big-desktop) {
+            width: 60rem;
+            
+          }
+
+              &:hover {
+               transform: scale(1.2) translateY(-.5rem) ;
+               box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+               z-index: 20;
+
+}
+
+            
+        }
+
+        .photo-p3 {
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            position: absolute;
+            right: 33%;
+            top: 42%;
+           width: 40rem;
+            @include respond(tab-port){
+              max-width: 45rem;
+             margin-top: -10rem;
+             left: -10rem;
+              top: 20%;
+            }
+               @include respond(phone){
+                width: 50%;
+                 top: 17%;
+                 left: 8%;
+             }
+             @include respond(big-desktop) {
+              width: 60rem;
+            }
+          
+          
+             &:hover {
+               transform: scale(1.2) translateY(-.5rem) ;
+               box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+               z-index: 20;
+
+           }
+            
+        }
+&:hover img{
+  transition: all .3s ease;
+
+}
+    }
+}

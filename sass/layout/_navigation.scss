@@ -1,0 +1,176 @@
+.navigation {
+&__checkbox {
+display: none;
+
+}
+
+&__button {
+background-color: $color-white;
+height: 7rem;
+width: 7rem;
+position: fixed;
+top: 6rem;
+right: 6rem;
+border-radius: 50%;
+z-index: 2000;
+box-shadow: 0 1rem 3rem rgba($color-black, .1);
+cursor: pointer;
+text-align: center;
+ @include respond(phone) {
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+   
+
+    }
+}
+// Step 1 -the background is behind the button because the button has a higher z-index
+&__background {
+    z-index: 1000;
+height: 6rem;
+width: 6rem;
+border-radius: 50%;
+position: fixed;
+top: 6.5rem;
+right: 6.5rem;
+background: linear-gradient($color-grey-dark 10% 50%, $color-grey-light-1 70%);
+transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+@include respond(phone) {
+    height: 4.5rem;
+    width: 4.5rem;
+    }
+}
+
+&__nav {
+    // Step 2 -we define the size of the nav element in order to make it visible on the screen and to center the list element inside of it in the middle of the screen
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1500;
+// At this point after creating the navigation we give opacity 0 and width 0 to the nav element so that it is not visible on the screen
+opacity: 0;
+width: 0;
+transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55), width .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+// STep 3 - we center the list element inside of it in the middle of the screen
+&__list {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+list-style-type: none;
+text-align: center;
+width: 100%;
+
+}
+
+&__item {
+margin: 1rem;
+
+}
+
+&__link {
+    &:link,
+&:visited {
+    // STep  4 -we create the animation for the navigation links
+    display: inline-block;
+text-transform: uppercase;
+letter-spacing: 2px;
+word-spacing: 6px;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%,$color-grey-light-1 50%,  $color-grey-dark 80%, $color-grey-light-1 100% 100%);
+    color: $color-black;
+    // By giving a high background size like 200% the one part of the gradient will be on the left and the other part on the right and then we can move the background position to the left or to the right to show the part of the gradient that we want
+background-size: 230%;
+transition: all .4s;
+}
+&:hover,
+&:active {
+    // in order to show the other part of the gradient we move the background position to the left by giving a background-position of 100%
+    background-position: 100%;
+color: $color-white;
+transform: translateX(1rem);
+}
+}
+//The ~ select all the siblings elements of the checkbox appearing after the checkbox
+&__checkbox:checked ~ &__background {
+    // Step 5 - by clicking the checkbox we want to show the navigation background
+    transform: scale(150);
+}
+&__checkbox:checked ~ &__nav {
+    // Step 6 - by clicking we want to show the navigation by setting back the opacity to 1 and the width to 100%
+    opacity: 1;
+    width: 100%;
+}
+
+
+//Icon animation
+&__icon {
+    position: relative;
+    margin-top: 3.5rem;
+@include respond(phone) {
+    margin-top: 2.3rem;
+}
+    &,
+    &::before,
+    &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-grey-dark;
+        display: inline-block;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    &::before { top: -.8rem; 
+   
+    }
+    &::after {
+         top: .8rem;
+        
+        }
+}
+
+&__button:hover &__icon::before {
+    top: -1rem;
+    @include respond(phone) {
+        top: -1.2;
+        }
+}
+
+&__button:hover &__icon::after {
+    top: 1rem;
+
+    @include respond(phone) {
+        top: 1.2rem;
+        }
+}
+
+// The + combinator selects the element immediately following the specified element.
+// It targets the first element that is a direct sibling immediately following the specified element.
+
+&__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+}
+
+&__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+&__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+}

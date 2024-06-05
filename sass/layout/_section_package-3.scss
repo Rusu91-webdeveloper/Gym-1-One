@@ -1,0 +1,57 @@
+.section-packages {
+    display: flex;
+        background-color: $color-grey-light-1;
+        padding-top: 70rem;
+        padding-bottom: 40rem;
+        margin-top: -30rem;
+        display: flex;
+        justify-content: space-evenly;
+    
+        @include respond(phone) {
+            padding-bottom: 10rem;
+               }
+    
+        &-child{
+            position: relative;
+            margin-top: -26rem;
+            padding-top: 20rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly; 
+    
+    
+        @include respond(tab-port){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            }
+            @include respond(phone){
+                width: 90%;
+            }
+    
+        h2 {
+            letter-spacing: 5px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 5rem;
+    
+            @include respond(tab-port){
+                font-size: 4rem;
+                font-weight: 900;
+                width: 100%;
+                text-align: center;
+           
+            }
+            @include respond(phone){
+                font-size: 4rem;
+                font-weight: 900;
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+        }
+    }

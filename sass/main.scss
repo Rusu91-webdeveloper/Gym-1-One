@@ -1,0 +1,37 @@
+
+
+// In This project i am using BEM aproach for naming classes 
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+@import "base/base";
+@import"base/animations";
+@import "base/typography";
+
+@import "components/buttons";
+@import "components/cards";
+
+
+
+
+@import "layout/hero-img";
+@import "layout/section_about-1";
+@import "layout/section_features-2";
+@import "layout/section_package-3";
+@import "layout/section_stories-4";
+@import "layout/footer-5";
+@import "layout/navigation";
+
+
+
+
+
+
+
+
+
+
+
+
+

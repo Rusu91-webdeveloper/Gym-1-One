@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="description" content="My fitness webpage created only with Html and Scss">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Tailwind CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+        <!-- Boot strap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google fonts link -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+        
+        <title>GYM-1ONE</title>
+    </head>
+    <body>
+
+
+        <!-- My navigation Bar starts here -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About Gym-1one</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Our services</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">What we offer</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Our Packages</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
+                    </ul>
+            </nav>
+        </div>
+
+        <!-- Here it starts the header with the hero image as background -->
+        <header class="header" id="about">
+            <div class="header__text-box">
+                 <h1 class="heading-primary">
+                     <span class="heading-primary--main">Gym-1One</span>
+                     <span class="heading-primary--sub">Nothing will work unless you do</span>
+                 </h1>
+                 <a class="btn btn--white btn--animated" href="#section-packages">Discover our Offers</a>
+            </div>
+         </header>
+
+
+        <main>
+         <!-- Here it starts the section with the ABOUT US and the 3 pictures -->
+         <section class="section-about">
+                <h2 class="heading-secondary">
+                    Discover Our Gym
+                </h2>
+           
+            <div class="col1">
+                <h3 class="heading-tertiary">You are going to fell in love </h3>
+                <p class="paragraph">
+                  Welcome to "<span class="heading-tertiary__strong">GYM-1ONE</span>," your premier standing fitness studio designed to revolutionize the way you approach health and wellness. At ElevateFit, we believe that staying active shouldn't be a chore but a joyful experience that uplifts both your body and spirit.  </p>
+            
+                <h3 class="heading-tertiary">Train like you never have before</h3>
+                <p class="paragraph">Our commitment to innovation extends beyond the workout itself. <span class="heading-tertiary__strong">GYM-1ONE</span> embraces cutting-edge technology, providing you with real-time feedback, progress tracking, and personalized insights to enhance your fitness journey. Our state-of-the-art equipment and spacious studio ensure a comfortable and enjoyable workout experience.</p>
+            </div>
+                
+                <div class="col2">
+                    <img src="./img/pexels-leon-ardho-1552249.jpg" alt="photo with an athlete" class="photo-p1">
+                    <img src="./img/pexels-william-choquette-1954524.jpg" alt="a person training" class="photo-p2">
+                    <img src="./img/pexels-max-rahubovskiy-7031705-L.jpg" alt="studio fitness photo" class="photo-p3">
+                </div>
+            </section>
+
+
+            <!-- Here it starts the section with the features with the 4 cards -->
+                       <section class="section-features">
+                           <div class="section-features__parent">
+                            <div class="features-box">
+                                <i class="feature-box__icon fa-solid fa-globe"></i>
+                                <h3 class="heading-tertiary u-margin-bottom-small">Explore our facilities</h3>
+                                <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illum aspernatur, sint architecto animi sed velit molestiae? Explicabo, non sit.</p>
+                            </div>
+                     
+                
+                     
+                            <div class="features-box">
+                                <i class="feature-box__icon fa-solid fa-people-group"></i>
+                                <h3 class="heading-tertiary u-margin-bottom-small">Meet our Team</h3>
+                                <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illum aspernatur, sint architecto animi sed velit molestiae? Explicabo, non sit.</p>
+                            </div>
+                        
+                
+                     
+                            <div class="features-box">
+                                <i class="feature-box__icon fa-solid fa-utensils"></i>
+                                <h3 class="heading-tertiary u-margin-bottom-small">Check our Menu</h3>
+                               <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illum aspernatur, sint architecto animi sed velit molestiae? Explicabo, non sit.</p>
+                            </div>
+                       
+                
+                        
+                            <div class="features-box">
+                                <i class="feature-box__icon fa-solid fa-paw"></i>
+                                <h3 class="heading-tertiary u-margin-bottom-small">Pet friendly</h3>
+                                  <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus illum aspernatur, sint architecto animi sed velit molestiae? Explicabo, non sit.</p>
+                            </div>
+                      </div>   
+                   </div>
+            </section>
+
+<!--    //here it starts the section with the packages -->
+            <section id="section-packages" class="section-packages">
+
+                <!-- first card -->
+                <div class="section-packages-child">
+                    <h2>Our packages</h2>
+                    <div class="row">
+                        <div class="col-1-of-3">
+                           <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture-1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1"> Basic </span>
+                               
+                               </h4>
+                               <div class="card__details">
+                                <ul>
+                                    <li>5 entry's per week</li>
+                                    <li>1 spinning session free per week</li>
+                                    <li>free coffe</li>
+                                    <li>free wifi</li>
+                                    <li></li>
+                                </ul>
+                               </div>
+                            </div>
+                            <!-- this is the back of the card!!!!!!!! -->
+                            <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                            <div class="card__price-box">
+                            <p class="card__price-only">Only</p>
+                            <p class="card__price-value">50$</p>
+                       </div>
+                <a href="" class="btn btn--white">BooK now</a>
+                               </div>
+                            </div>
+                           </div>
+                        </div>
+                       </div>
+    
+                       <!-- 2nd card -->
+                       <div class="row">
+                        <div class="col-1-of-3">
+                           <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture-2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2"> Advanced </span>
+                               
+                               </h4>
+                               <div class="card__details">
+                                <ul>
+                                    <li>unlimited entrance</li>
+                                    <li>1 protein shake a day</li>
+                                    <li>solarium incuded</li>
+                                    <li>free coffe</li>
+                                    <li>free wifi</li>
+                                </ul>
+                               </div>
+                            </div>
+                            <!-- this is the back of the card!!!!!!!! -->
+
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">99$</p>
+                                    </div>
+                                    <a href="" class="btn btn--white">BooK now</a>
+                                                                                                 </div>
+                            </div>
+                           </div>
+                        </div>
+                       </div>
+
+                       <!-- 3rd card -->
+                       <div class="row">
+                      
+                           <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture-3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">Pro </span>
+                                
+                               </h4>
+                               <div class="card__details">
+                                <ul>
+                                    <li>unlimited entrance</li>
+                                    <li>sauna included</li>
+                                    <li>solarium incuded</li>
+                                    <li>personal trainer</li>
+                                    <li>protein included</li>
+                                </ul>
+                               </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Only</p>
+                                        <p class="card__price-value">139$</p>
+                                    </div>
+                                    <a href="" class="btn btn--white">BooK now</a>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                       </div>
+                   </div>
+            </section>
+
+            <!-- Here it starts the section with the stories -->
+
+<section class="section-stories">
+    <!-- <div class="bg-video">
+         This is how we add video to our website as a background 
+        <video class="bg-video__content" autoplay muted loop>
+            <source src="/img/pexels-rodnae-productions-7187517 (1080p).mp4">
+            Your browser is not supported!
+        </video>
+    </div> -->
+    <div class="">
+        <h2 class="heading-secondary">
+            We change people's lives
+        </h2>
+        <div class="row">
+            <div class="story">
+                <figure class="story__shape">
+<img class="story__shape-img" src="./img/pexels-gustavo-almeida-3060201.jpg" alt="person playing basketball">
+<figcaption class="story__caption">Jane Sunder</figcaption>
+                </figure>
+                <div class="story__text">
+                    <h3 class="heading-tertiary">The best gym i ever saw</h3>
+                    <p>The Machines used are probably the best i have ever used,the music and the atmosphere is a whole new level.</p>
+                </div>
+            </div>
+
+            <div class="story">
+                <figure class="story__shape">
+<img class="story__shape-img" src="./img/lorenzo-fatto-offidani-P6T1R9rSL0Q-unsplash.jpg" alt="person playing basketball">
+<figcaption class="story__caption">Michael Smith</figcaption>
+                </figure>
+                <div class="story__text">
+                    <h3 class="heading-tertiary">Umbelivable</h3>
+                    <p>The stuff is very helpfull,the gym and equipment are always clean.The gym itself it's probably top in the world</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+<!-- Here it starts the footer -->
+
+
+
+<footer>
+
+<!-- component -->
+<!-- This is an example component -->
+<div class="box bg-gray-400">
+  <div class="max-w-2xl mx-auto text-black py-10">
+      <div class="text-center">
+        <p class="text-4xl"> Creator of this webpage     <span class="text-red-800">"Rusu Emanuel"</span></p>
+          <h3 class="text-4xl mb-3"> Download our fitness app </h3>
+          <p> Stay fit. All day, every day. </p>
+
+          <div class="flex justify-center my-10">
+              <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                  <img alt="google-icon" src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-9 md:w-10">
+                  <div class="text-left ml-3">
+                      <p class='text-xs text-black'>Download on </p>
+                      <p class="text-sm md:text-base"> Google Play Store </p>
+                  </div>
+              </div>
+              <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+                  <img alt="apple icon" src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-9 md:w-10">
+                  <div class="text-left ml-3">
+                      <p class='text-xs text-black'>Download on </p>
+                      <p class="text-sm md:text-base"> Apple Store </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-900">
+          <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Project created only with Hhml & Scss. </p>
+          <div class="order-1 md:order-2">
+              <span class="px-2">About us</span>
+              <span class="px-2 border-l">Contact us</span>
+              <span class="px-2 border-l">Privacy Policy</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+</footer>
+    </body>
+</html> 
