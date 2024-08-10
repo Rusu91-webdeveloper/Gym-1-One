@@ -1,8 +1,7 @@
 
 
 # 🏋️‍♂️ Gym 1 One
-🌟 Project Overview
-This project is my first ever creation, showcasing my skills in HTML and SCSS. It is a responsive webpage for a fitness studio, designed to provide comprehensive information about the studio, its services, and schedules.
+🌟 This project is my first ever creation, showcasing my skills in HTML and SCSS. It is a responsive webpage for a fitness studio, designed to provide comprehensive information about the studio, its services, and schedules.
 
 ## 🚀 Features
 #### Responsive Design 📱💻: Optimized for desktops, tablets, and smartphones.
